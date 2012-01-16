@@ -15,9 +15,11 @@ public class WindowOpener extends CustomComponent implements Window.CloseListene
     Button createButton;
     Button removeButton;
     Label label;
+    String windowName;
 
     public WindowOpener(String windowsName, Window main) {
         this.main = main;
+        this.windowName = windowsName;
         final VerticalLayout layout = new VerticalLayout();
         createButton = new Button("Создать Окно", this, "openButtonClick");
         layout.addComponent(createButton);
@@ -27,7 +29,8 @@ public class WindowOpener extends CustomComponent implements Window.CloseListene
     }
 
     public void openButtonClick(Button.ClickEvent event) {
-        newWindow = new Window("Созданное новое окно");
+        newWindow = new Window();
+        newWindow.setName(windowName == null ? "Созданное новое окно" : windowName);
         newWindow.setPositionX(200);
         newWindow.setPositionY(400);
         main.addWindow(newWindow);
