@@ -13,8 +13,32 @@
             <param-value>com.ecwo.webmonitoring.My</param-value>
         </init-param>
     </servlet>
+    <servlet>
+        <servlet-name>SimpleAddress</servlet-name>
+        <servlet-class>com.vaadin.terminal.gwt.server.ApplicationServlet</servlet-class>
+        <init-param>
+            <param-name>application</param-name>
+            <param-value>com.ecwo.webmonitoring.SimpleAddressBook</param-value>
+        </init-param>
+    </servlet>
+    <servlet>
+        <servlet-name>SExemple</servlet-name>
+        <servlet-class>com.vaadin.terminal.gwt.server.ApplicationServlet</servlet-class>
+        <init-param>
+            <param-name>application</param-name>
+            <param-value>com.ecwo.webmonitoring.SExemple</param-value>
+        </init-param>
+    </servlet>
     <servlet-mapping>
         <servlet-name>myMaping</servlet-name>
         <url-pattern>/*</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SimpleAddress</servlet-name>
+        <url-pattern>/s/*</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SExemple</servlet-name>
+        <url-pattern>/se/*</url-pattern>
     </servlet-mapping>
 </web-app>
