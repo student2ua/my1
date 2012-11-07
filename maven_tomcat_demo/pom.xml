@@ -1,0 +1,24 @@
+<project>
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>root</groupId>
+    <version>1.0</version>
+    <artifactId>project</artifactId>
+    <packaging>pom</packaging>
+    <name>maven-tomcat-demo</name>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>tomcat-maven-plugin</artifactId>
+                <version>1.1</version>
+                <configuration>
+                    <!-- id-шник из settings.xml -->
+                    <server>apache-tomcat-7</server>
+                    <url>http://localhost:8080/manager</url>
+                    <path>/mywebapp</path>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>

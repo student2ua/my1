@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings>
+   <servers>
+      <server>
+        <!--
+             id это просто идентификатор,  используете удобное для вас название!
+            Я называю так, чтобы не запутаться,
+            т.к. у меня есть еще сервера других версий и других целей.
+         -->
+        <id>apache-tomcat-7</id>
+        <!-- имя пользователя, которое вы указали в tomcat-users.xml -->
+        <username>username</username>
+        <!-- ну и естественно его пароль из tomcat-users.xml -->
+        <password>superSecretPass</password>
+      </server>
+    </servers>
+</settings>
+<!--</xml>-->

@@ -1,0 +1,29 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>maven_jetty_demo</groupId>
+  <artifactId>maven_jetty_demo</artifactId>
+  <packaging>war</packaging>
+  <version>1.0</version>
+  <name>maven_jetty_demo Maven Webapp</name>
+    <description>http://wiki.eclipse.org/Jetty/Feature/Jetty_Maven_Plugin#Configuring_the_Jetty_Container</description>
+  <url>http://maven.apache.org</url>
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+  <build>
+    <finalName>maven_jetty_demo</finalName>
+  <plugins>
+      <plugin>
+          <groupId>org.mortbay.jetty</groupId>
+          <artifactId>jetty-maven-plugin</artifactId>
+          <version>8.1.7.v20120910</version>
+
+      </plugin></plugins>
+  </build>
+</project>

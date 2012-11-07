@@ -1,0 +1,4 @@
+<tomcat-user>
+    <role rolename="manager"/>
+    <user username="username" password="superSecretPass" roles="manager"/>
+</tomcat-user>
